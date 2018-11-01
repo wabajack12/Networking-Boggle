@@ -1,0 +1,13 @@
+Owen Sheets, Anais Dawson
+
+1) We are being asked to create a networking game where multiple clients contact a server, the server waits until it can pair a client with another client and then the clients will play the game through the server. The server will keep track of game progress and enforce rules. We will need to implement logic to manage multiple clients, logic to run the word game and special cases such as a client prematurely disconnects. A server will have a "lobby" where clients will wait to be paired with other clients. As soon as the client enters the lobby, the server will send them either "player 1" or "player 2" as well as the number of letters on the board and the number of seconds the player has to guess a word per turn. When the clients turn is over, the server will send the other client "Y" which indicates the start of a client's turn. This continues until a player has won three rounds.
+
+2) We believe the biggest challenging part of the assignment will be properly using send() and recv(), making sure the server keeps track of all clients and testing if a client disconnects. After prog1, I (Owen Sheets) struggled with sending a properly sized buffer so I need to be sure that I am sending the board and word correctly. We also believe implementing the timer for the turn. If a client guesses an incorrect word and there is still time, it is no longer that client's turn.
+
+3) Resource 1: Professor Hutchinson (We love you).
+Resource 2: Stack Overflow if we need specific examples or conceptual help.
+Resource 3: The TCP/IP networking principles book for networking C examples.
+
+4) At this moment (1/31/2018, 1:34 P.M.) we are not planning on using a Trie implementation
+
+5) We plan to meet to meet everyday after class for at least an hour and maybe on the weekends if more time is needed.
